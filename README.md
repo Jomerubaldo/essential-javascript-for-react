@@ -1,1 +1,1 @@
-# essential-javascript-for-react
+# Essential Javascript For React
