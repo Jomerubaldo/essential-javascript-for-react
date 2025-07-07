@@ -19,3 +19,5 @@ console.log(personNames.includes('Jomer'));
 
 //Slice - first length number is delete and second length number is copy or get value
 console.log(personNames.slice(1, 2));
+
+//this is a essential for reactjs
