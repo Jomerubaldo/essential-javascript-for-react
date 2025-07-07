@@ -9,12 +9,13 @@ console.log(personNames);
 personNames.pop();
 console.log(personNames);
 
-//Splice Method changes the content of aaray by removing or replacing
-//the existing value and/or new value in place.
-//first index is not remong his road just want add to the specific index
-//second index is removed all of scope in the specific index then replace his index there
-personNames.splice(3, 0, 'Jean');
+// first san mo gusto magsimula pede kadin mag add dyan tapos simula sa sinimulan mo ilan sila na gusto mo madelete na value
+// tapos hindi ka dapat magsimula sa index lenght dapat
+personNames.splice(3, 0, 'Karylle');
 console.log(personNames);
 
-personNames.splice(0, 3, 'Angel');
-console.log(personNames);
+//Includes chech if the value is inside if inside its return true then if not false
+console.log(personNames.includes('Jomer'));
+
+//Slice - first length number is delete and second length number is copy or get value
+console.log(personNames.slice(1, 2));
