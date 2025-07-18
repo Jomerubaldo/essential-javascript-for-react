@@ -1,1 +1,1 @@
-# Essential Javascript For React
+# Fundamental for Javascript
