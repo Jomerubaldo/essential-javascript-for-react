@@ -12,7 +12,7 @@ const object = {
   course2: 'BSIT',
 };
 
-const { name2, age2, course2 } = object;
+const { name: name2, age: age2, course: course2 } = object; // i change this code
 
 console.log(name2, age2, course2);
 
@@ -28,3 +28,31 @@ const studenInfo = {
 };
 
 x(studenInfo);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+const user = {
+  name: 'Jomer',
+  age: 21,
+  course: 'BSIT',
+  colorHair: 'Black',
+};
+
+const { name, age, course, colorHair } = user;
+
+console.log(name, age, course, colorHair);
+
+const userInfo = ['Jomer', 'Jelyy', 'Mercy', 'Junior'];
+
+const [Jomer, Jelly, Mercy, Junior] = userInfo;
+
+console.log(Jomer, Jelly, Mercy, Junior);
