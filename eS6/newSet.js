@@ -13,15 +13,16 @@ const a = 'a';
 const b = 'b';
 const c = 'c';
 const d = 'd';
+const e = 'e';
 
 // add set
 letters.add(a);
 letters.add(b);
 letters.add(c);
 letters.add(d);
+letters.add(e);
 
 //for of
-
 text = '';
 
 for (let letter of letters) {
