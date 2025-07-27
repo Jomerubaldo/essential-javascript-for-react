@@ -8,6 +8,7 @@ let promise = new Promise((resolve, reject) => {
 promise
   .then(() => console.log('Promise was resolve'))
   .catch(() => console.log('Promise was rejected'));
+// output Promise was resolve
 
 //pending
 //result
