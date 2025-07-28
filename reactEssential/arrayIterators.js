@@ -67,3 +67,49 @@ let totalCost = studentInfo.reduce(
 );
 
 document.querySelector('#demo').innerHTML = `this is reduce() ${totalCost};`;
+
+// kaya e modify yong value niya pero ganon padin yong structure
+const addNums = [21, 32, 12, 54, 31];
+
+const mapAdd = addNums.map((num) => num * 2);
+
+document.querySelector('#demo').innerHTML = mapAdd;
+// output: 42, 64, 24, 108, 62
+
+// bibilangin niya kung ilan lang yong letters ng name kapag mataas sa 7 don niya lalabas yong names pero kapag less sa 7 empty ang lalabas
+const userNames = [
+  'Jomer Ubaldo',
+  'Jelly',
+  'Junior',
+  'Merly Ubaldo',
+  'Mercy',
+  'Jojie Ubaldo',
+  'Jerson',
+];
+
+const filterNames = userNames.filter((userName) => userName.length > 7);
+
+console.log(filterNames);
+// output: ["Jomer Ubaldo", "Merly Ubaldo", "Jojie Ubaldo"]
+
+// create array of objects
+const users = [
+  { name: 'jomer', status: 'active' },
+  { name: 'jelly', status: 'inactive' },
+  { name: 'junior', status: 'active' },
+  { name: 'merly', status: 'inactive' },
+  { name: 'jerson', status: 'active' },
+];
+
+// using filter to get the user have status active
+const activeUser = users.filter((user) => user.status === 'active');
+
+// using map at this time i get 3 user so i want to uppercase there first letter then add a crown emojie
+const modifiedNames = activeUser.map((user) => {
+  const capitalized = user.name.charAt(0).toUpperCase() + user.name.slice(1);
+  return capitalized + '👑';
+});
+
+console.log(modifiedNames);
+
+// find continue tommorow
