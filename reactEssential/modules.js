@@ -1,4 +1,4 @@
 //Modules Javascript
 import message from './person.js';
 
-console.log(message());
+document.querySelector('#demo').innerHTML = message();

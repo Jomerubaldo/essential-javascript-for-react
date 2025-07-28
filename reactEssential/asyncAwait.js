@@ -4,7 +4,7 @@ const url = 'https://jsonplaceholder.typicode.com/posts/1';
 const fetchPromise = async () => {
   const res = await fetch(url);
   const response = await res.json();
-  console.log(response);
+  document.querySelector('#demo').innerHTML = response;
 };
 
 fetchPromise();

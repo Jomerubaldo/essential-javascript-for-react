@@ -3,7 +3,7 @@ let grade = 75;
 let condition =
   grade >= 90 ? 'Excellent' : grade >= 75 ? 'Passed' : 'Try again';
 
-console.log('OverAll Remark:', condition);
+document.querySelector('#demo').innerHTML = `OverAll Remark: ${condition}`;
 
 // u can apply ternary in function
 function getFee(fee) {
@@ -22,7 +22,7 @@ const userAge = 18;
 const userConfirmation =
   userAge > 17 ? 'Yes u can vote!' : 'Sorry, u cant vote!';
 
-console.log(userConfirmation);
+document.querySelector('#demo').innerHTML = userConfirmation;
 
 // nested ternary Operator but not recommended beacause hard to read
 const userGrade = 90;
@@ -35,5 +35,4 @@ const totalGrade =
     : userGrade >= 74
     ? 'Passed'
     : 'Failed';
-
-console.log(totalGrade);
+document.querySelector('#demo').innerHTML = totalGrade;

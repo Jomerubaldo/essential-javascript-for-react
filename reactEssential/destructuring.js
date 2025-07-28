@@ -1,24 +1,28 @@
-//Duestructuring Array
+// Array
 const array = ['Jomer', 21, 'BSIT'];
 
+// destructuring
 const [name1, age1, course1] = array;
 
-console.log(name1, age1, course1);
+document.querySelector('#demo').innerhHTML = `${name1} ${age1} ${course1}`;
 
-//Destructuring object
+// Object
 const object = {
   name2: 'Jomer',
   age2: 21,
   course2: 'BSIT',
 };
 
-const { name: name2, age: age2, course: course2 } = object; // i change this code
+// destructuring
+const { name: name2, age: age2, course: course2 } = object;
 
-console.log(name2, age2, course2);
+document.querySelector('#demo').innerHTML = `${name2} ${age2} ${course2}`;
 
 //example
 const x = ({ name, course }) => {
-  console.log(`${name} Taking the course ${course}`);
+  document.querySelector(
+    '#demo'
+  ).innerHTML = `${name} Taking the course ${course}`;
 };
 
 const studenInfo = {
@@ -47,12 +51,17 @@ const user = {
   colorHair: 'Black',
 };
 
+// destructuring
 const { name, age, course, colorHair } = user;
 
-console.log(name, age, course, colorHair);
+document.querySelector(
+  '#demo'
+).innerHTML = `${name} ${age} ${course} ${colorHair}`;
 
 const userInfo = ['Jomer', 'Jelyy', 'Mercy', 'Junior'];
 
-const [Jomer, Jelly, Mercy, Junior] = userInfo;
+const [person1, person2, person3, person4] = userInfo;
 
-console.log(Jomer, Jelly, Mercy, Junior);
+document.querySelector(
+  '#demo'
+).innerHTML = `${person1} ${person2} ${person3} ${person4}`;

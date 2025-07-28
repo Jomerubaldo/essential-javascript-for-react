@@ -5,4 +5,4 @@ const fetchPromise = fetch(url);
 
 fetchPromise
   .then((response) => response.json())
-  .then((response) => console.log(response));
+  .then((response) => (document.querySelector('#demo').innerHTML = response));

@@ -19,8 +19,7 @@ const cubes = numbers.map((element) => Math.pow(element, 3));
 const evenNums = numbers.filter((element) => element % 2 === 0);
 const odNums = numbers.filter((element) => element % 2 !== 0);
 const totalNums = numbers.reduce(
-  (accumulator, element) => accumulator + element,
-  0
+  (accumulator, element) => accumulator + element
 );
 
 document.querySelector('#demo2').innerHTML = squares;
@@ -28,3 +27,13 @@ document.querySelector('#demo3').innerHTML = cubes;
 document.querySelector('#demo4').innerHTML = evenNums;
 document.querySelector('#demo5').innerHTML = odNums;
 document.querySelector('#demo6').innerHTML = totalNums;
+
+challenge;
+
+const arrayNumbers = [1, 2, 3, 4, 5];
+
+const doubleNums = () => {
+  return arrayNumbers.map((element) => element * 2);
+};
+
+document.querySelector('#demo').innerHTML = doubleNums();

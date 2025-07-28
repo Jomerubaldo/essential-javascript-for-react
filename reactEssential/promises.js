@@ -6,8 +6,12 @@ let promise = new Promise((resolve, reject) => {
 });
 
 promise
-  .then(() => console.log('Promise was resolve'))
-  .catch(() => console.log('Promise was rejected'));
+  .then(
+    () => (document.querySelector('#demo').innerHTML = 'Promise was resolve')
+  )
+  .catch(
+    () => (document.querySelector('#demo1').innerHTML = 'Promise was rejected')
+  );
 // output Promise was resolve
 
 //pending
