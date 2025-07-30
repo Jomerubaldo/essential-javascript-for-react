@@ -1,35 +1,39 @@
-// array
-const userName = ['Jomer', 'Jojie', 'Jelly'];
+const products = [
+  { id: 1, name: 'Laptop', price: 1500, isStock: false },
+  { id: 2, name: 'Tshirt', price: 200, isStock: true },
+  { id: 3, name: 'Pants', price: 150, isStock: true },
+  { id: 4, name: 'Brief', price: 50, isStock: true },
+  { id: 5, name: 'Bag', price: 500, isStock: false },
+];
+
+// if available
+const productAvail = products.filter((product) => product.isStock === true);
+
+// display available
+// hindi pwede kumuha dito ng variable na showProduct tapos papasa sa find kasi naka string to so kuha ka sa filter nalang ng variable
+const showProduct = productAvail.map(
+  (showProduct) => `Name: ${showProduct.name} <br/> Price: ${showProduct.price}`
+);
+
+document.querySelector('#demo').innerHTML = showProduct.join('<br/>');
+
+// specific product
+const productBuy = productAvail.find((buy) => buy.name === 'Tshirt');
 
 document.querySelector(
-  '.array'
-).innerHTML = `User 1: ${userName[0]} <br/> User 2: ${userName[1]} <br/> User 3: ${userName[2]}`;
+  '#demo1'
+).innerHTML = `Name: ${productBuy.name} Price: ${productBuy.price}`;
 
-// object
-const userInfo = {
-  name: 'Jomer',
-  age: 21,
-  course: 'BSIT',
-};
+// You have a list of items in a user's cart.
 
-document.querySelector(
-  '.object'
-).innerHTML = `Name: ${userInfo.name} <br/> Age: ${userInfo.age} <br/> Course: ${userInfo.course}`;
+// You need to:
 
-// class
+// Filter the products that are still available (inStock: true)
 
-class StudentInfo {
-  constructor(name, age, course) {
-    this.name = name;
-    this.age = age;
-    this.course = course;
-  }
+// Map them into a format like "Product Name - ₱Price"
 
-  show() {
-    return `Name: ${this.name} Age: ${this.age} Course: ${this.course}`;
-  }
-}
+// Find a specific product like "Monitor"
 
-const details = new StudentInfo('Jomer', 21, 'BSIT');
+// Reduce the total price to show a "Total Amount"
 
-document.querySelector('.class').innerHTML = details.show();
+// Use setTimeout to simulate a delay (like loading the data from a server)
