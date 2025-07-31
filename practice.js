@@ -12,9 +12,3 @@ const myFunction = () => {
 };
 
 button.addEventListener('click', myFunction);
-
-const sayAdd = (a, b) => console.log(a + b);
-
-sayAdd(222222222222, 5);
-
-// invoke or function call
